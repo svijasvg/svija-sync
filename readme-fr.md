@@ -16,13 +16,9 @@
 
 1. **Cliquer deux fois sur le script pour l'ouvrir** dans TextEdit.
 
-2. Dans les préférences de TextEdit, **décocher la case « Guillements courbes »**.
+2. Remplacer le « x » à la quatrième ligne par les trois lignes en rouge dans le mail que vous avez reçu de Svija.
 
-3. **Modifier les deux lignes** en haut du script avec les infos de votre projet (**site_url** & **user_id**).
-
-**Il est très important que les guillements droits ne soit pas transformés en guillements courbes.**
-
-*Quitter TextEdit.*
+*Sauvegerder et quitter TextEdit.*
 
 # Utiliser le script
 
