@@ -21,12 +21,13 @@ You can also use it to download all the files needed for working on your website
 
 1. **Click twice on the TXT document** to open it in TextEdit.
 
-2. Replace the "**x**" on the fourth line with the **three lines of red text** in the email you've received from Svija:
+2. Replace the "**x**" on the fourth line with the **three lines of red text** in the email you've received from Svija:  
 
-    site='example.com'
-    user='example'
-    pass='#r4nd0m#'
-
+```
+site='example.com'  
+user='example'  
+pass='#r4nd0m#'  
+```
 *Save the changes and quit TextEdit.*
 
 # Start the App
@@ -41,7 +42,7 @@ To continue, open **System Preferences** › **Security and Privacy** › **Gene
 
 At the bottom you'll see:
 
-**"Svija Sync.command" was blocked from opening because it is not from an identified developer.**
+>"Svija Sync.command" was blocked from opening because it is not from an identified developer.
 
 Click the button **[Open Anyway]**
 
