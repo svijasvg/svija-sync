@@ -13,7 +13,7 @@ You can also use it to download all the files needed for working on your website
 
 2. **Open the downloaded ZIP file** (if it didn't happen automatically).
 
-2. **Drag the appropriate TXT document** (EN or FR version) into a new working folder where all your website files will be kept.
+2. **Drag the appropriate TXT document** (English or French) into a new working folder where all your website files will be kept.
 
 *Put the other files in the Trash.*
 
@@ -21,7 +21,7 @@ You can also use it to download all the files needed for working on your website
 
 1. **Click twice on the TXT document** to open it in TextEdit.
 
-2. Replace the "**x**" on the fourth line with the **three lines of red text** in the email you've received from Svija:  
+2. **Replace the "**x**"** on the fourth line with the **three lines of red text** in the email you've received from Svija:  
 
 ```
 site='example.com'  
@@ -32,11 +32,11 @@ pass='#r4nd0m#'
 
 # Start the App
 
-Rename the app to **sync.commmand**
+Rename the TXT file to **sync.commmand**. This tells the Mac that it's no longer a text document but an app.
 
 **Click twice** on the app to run it. You may see a warning:
 
-"Svija Sync.command" can't be opened because it is from an unidentified developer.
+>"Svija Sync.command" can't be opened because it is from an unidentified developer.
 
 To continue, open **System Preferences** › **Security and Privacy** › **General**
 
@@ -48,11 +48,14 @@ Click the button **[Open Anyway]**
 
 # Once the App is Running
 
-Choose **Download** to create the **sync** folder containing your website files.
+Choose **Download** to create the **sync folder** containing your website files.
 
-You now have everything you need to update your website in the **"sync" folder**.
+Everything you need to update your website in this folder:
 
-If you will be using Svija regularly, the [Svjia Illustrator scripts](https://github.com/svijasvg/illustrator-scripts) will make your life much easier. You can download them [here](https://github.com/svijasvg/illustrator-scripts).
+* Illustrator source files
+* linked images (in a folder called "links")
+* fonts
+* assorted images like the favicon, the icon for an iPhone shortcut, and a capture of the homepage that will be shown when the web site is posted to social media
 
 # General Usage
 
@@ -60,3 +63,6 @@ Whenever you want to work on your website, **double-click "Svija Sync.comand" to
 
 As long as the app is running, your files will be synchronized every five seconds.
 
+# What Next?
+
+If you will be using Svija regularly, the [Svjia Illustrator scripts](https://github.com/svijasvg/illustrator-scripts) will make your life much easier. You can download them [here](https://github.com/svijasvg/illustrator-scripts).
