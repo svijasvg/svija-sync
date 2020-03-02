@@ -40,7 +40,7 @@ Rename the TXT file to **sync.commmand**. This tells the Mac that it's no longer
 
 To continue, open **System Preferences** › **Security and Privacy** › **General**
 
-At the bottom you'll see:
+At the bottom you'll see a similar message:
 
 >"Svija Sync.command" was blocked from opening because it is not from an identified developer.
 
@@ -53,8 +53,9 @@ Choose **Download** to create the **sync folder** containing your website files.
 Everything you need to update your website in this folder:
 
 * Illustrator source files
-* linked images (in a folder called "links")
-* fonts
+* SVG files exported from Illustrator, that you'll never touch
+* linked images, in a folder called "links"
+* web fonts and a "source" folder inside with Mac fonts
 * assorted images like the favicon, the icon for an iPhone shortcut, and a capture of the homepage that will be shown when the web site is posted to social media
 
 # General Usage
@@ -65,4 +66,4 @@ As long as the app is running, your files will be synchronized every five second
 
 # What Next?
 
-If you will be using Svija regularly, the [Svjia Illustrator scripts](https://github.com/svijasvg/illustrator-scripts) will make your life much easier. You can download them [here](https://github.com/svijasvg/illustrator-scripts).
+    If you will be using Svija regularly, the [Svjia Illustrator scripts](https://github.com/svijasvg/illustrator-scripts) will make your life much easier. You can download them [here](https://github.com/svijasvg/illustrator-scripts).
