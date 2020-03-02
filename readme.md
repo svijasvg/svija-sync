@@ -1,17 +1,19 @@
 [Version en français](https://github.com/svijasvg/svija-sync/blob/master/readme-fr.md)
 
 
-Svija Sync is a **script**, a tiny program that just does one thing.
+Svija Sync is a **script**, a tiny app that just does one thing.
 
 As long as it's running, will **keep your website synchronized with files on your computer**.
 
-You can also use it to synchronize in the other direction — to download files from your website.
+You can also use it to download all the files necessary to work on your website.
 
 # Download the App
 
 1. Click the green button **Clone or download** at the top right of this page then choose **Download ZIP**.
 
-2. **Drag the appropriate app** (EN or FR version) into a work folder where website files will be kept.
+2. **Open the downloaded ZIP file** (if it didn't happen automatically).
+
+2. **Drag the appropriate app** (EN or FR version) into a new working folder where all your website files will be kept.
 
 *Put the other files in the Trash.*
 
