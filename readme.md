@@ -75,7 +75,7 @@ Everything you need to update your website:
 
 Whenever you want to work on your website, **double-click "Svija Sync.comand" to start syncronizing** your website.
 
-As long as the app is running, your files will be synchronized every five seconds (a new red bar appears).
+As long as the app is running, your files will be synchronized every five seconds (a new bar appears).
 
 # What Next?
 

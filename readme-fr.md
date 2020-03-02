@@ -68,7 +68,7 @@ Tout ce dont vous avez besoin pour travailler sur votre site web :
 
 Quand vous voulez travailler sur votre site web, **cliquez deux fois sur « Svija Sync.command »** pour démarrer la synchronisation en continu.
 
-Tant que l'app tourne, vos fichiers seront synchronisés toutes les cinq secondes (apparition d'une nouvelle barre rouge).
+Tant que l'app tourne, vos fichiers seront synchronisés toutes les cinq secondes (apparition d'une nouvelle barre).
 
 # En suite…
 
