@@ -25,7 +25,7 @@ keyno='N'
       on='on'
 computer='your computer'
    wsite='site'
-  server='server'
+  server='website'
   folder='folder'
  replace='Synchronizing'
 complete='Syncronisation complete'
@@ -39,7 +39,7 @@ canceled="$red""Synchronisation canceled — $close_lc.$none\n"
 
 instructions="    $version
     $red$server: $site
-    $folder: $user
+    user: $user
 $none
     $computer -> $wsite   $red$keyup$none""pload
     $computer <- $wsite   $red$keydown$none""ownload
@@ -59,8 +59,7 @@ continuous='|'
 uploading="$replace $site $with \"$sync_folder\" $on $computer..."
 downloading="$downloading $folder \"$sync_folder\" $on $site..."
 
-mac="$sync_folder/"
-ubuntu="$user@$site::$user/$sync_folder/"
+ubuntu="$user@$site::$user/$sync_folder"
 
 #———————————————————————————————————————— rsync exclusions
 
@@ -143,7 +142,7 @@ $keyup)
 		printf "\n    "
       fi
       counter=$((counter+1))
-      rsync -az --delete "${exclusions[@]}" --password-file=$pwd_file $mac $ubuntu
+      rsync -az --delete "${exclusions[@]}" --password-file=$pwd_file "$sync_folder/" $ubuntu
       printf "$continuous"
       sleep $interval
     done
@@ -152,7 +151,7 @@ $keyup)
 
 $keydown)
   printf "\n$downloading\n"
-  rsync -az --delete "${exclusions[@]}" --password-file=$pwd_file $ubuntu $mac
+  rsync -az --delete "${exclusions[@]}" --password-file=$pwd_file "$ubuntu/" $sync_folder
   printf "\n$complete — "
   ;;
 esac
