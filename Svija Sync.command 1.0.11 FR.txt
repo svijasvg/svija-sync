@@ -1,0 +1,171 @@
+#!/usr/bin/env bash
+#———————————————————————————————————————— config
+
+x
+
+#———————————————————————————————————————— instructions
+#
+#   https://github.com/svijasvg/svija-sync
+#
+#———————————————————————————————————————— language independent
+
+version='Svija Sync V1.0.11'
+
+sync_folder='sync'
+none='\e[0;0m'
+red='\e[1;91m'
+
+#———————————————————————————————————————— localized french
+
+keyup='U'
+keydown='D'
+keyyes='O'
+keyno='N'
+
+      on='sur'
+computer='votre ordinateur'
+   wsite='site'
+  server='serveur'
+  folder='dossier'
+ replace='Synchronisation de'
+complete='Syncronisation terminée'
+    with='avec'
+    from='contenus de'
+downloading='Téléchargement de'
+
+   close=$red"Quittez Terminal$none pour fermer"
+close_lc=$red"quittez Terminal$none pour fermer"
+canceled="$red""Synchronisation annulée — $close_lc.$none\n"
+
+instructions="    $version
+    $red$server: $site
+    $folder: $user
+$none
+    $computer -> $wsite   $red$keyup$none""ploader
+    $computer <- $wsite   $red$keydown$none""ownloader
+
+Choisissez une option (retour pour annuler) :"
+
+warning="$red""Remplacer $folder \"$sync_folder\" $on $computer$none — êtes-vous sûr ? [$keyyes/$keyno]:"
+
+invalid="Choix non-valide — $close_lc.
+         $red$keyup=uploader  $keydown=downloader :$none"
+
+#———————————————————————————————————————— no localization needed
+
+interval=5
+continuous='|'
+
+uploading="$replace $site $with \"$sync_folder\" $on $computer..."
+downloading="$downloading $folder \"$sync_folder\" $on $site..."
+
+mac="$sync_folder/"
+ubuntu="$user@$site::$user/$sync_folder/"
+
+#———————————————————————————————————————— rsync exclusions
+
+exclusions=(
+  --exclude ".DS_Store"
+  --exclude ".swp"
+  --exclude ".git"
+  --exclude ".command"
+  --exclude ".pwd"
+)
+
+#————————————————————————————————————————  fix svg names
+# renames "svg_name 2.svg" to "svg_name.svg"
+
+fix_names(){
+  sync_dirs=(sync/*)
+  
+  for f in "${sync_dirs[@]}"; do
+    sub_dirs=("$f"/*.svg)
+    for g in "${sub_dirs[@]}"; do
+  
+      [[ $g =~ ^.+\s\d\.svg ]] && echo matched
+  
+      regexp="^.+[[:space:]][[:digit:]]\.svg"
+      if [[ $g =~ $regexp ]]
+        then
+          new_name="${g::${#g}-6}"".svg"
+          mv "$g" "$new_name"
+      fi
+  
+    done
+  done
+}
+
+#———————————————————————————————————————— change to correct directory
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+cd "${DIR}"
+
+#———————————————————————————————————————— choice of synchronization
+
+printf "\n\n$instructions ";
+read flag; flag=$(echo "$flag" | tr a-z A-Z)
+
+#———————————————————————————————————————— invalid input
+
+while [[ "$flag" != "" ]] && [[ $flag != $keyup ]] && [[ $flag != $keydown ]]; do
+  printf "\n$invalid ";
+  read flag; flag=$(echo "$flag" | tr a-z A-Z)
+done
+
+#———————————————————————————————————————— confirm download
+
+if [[ $flag == $keydown ]]; then
+  printf "\n$warning ";
+  read confirmation; confirmation=$(echo "$confirmation" | tr a-z A-Z)
+  if [[ $confirmation != $keyyes ]]; then
+    flag=''
+  fi
+fi
+
+#———————————————————————————————————————— create password file
+
+pwd_file='.rsync.pwd'
+echo $pass > $pwd_file
+chmod 600 $pwd_file
+
+#———————————————————————————————————————— execute the sync
+
+case "$flag" in
+
+$keyup)
+  printf "\n$uploading\n\n    $close\n    "
+  fix_names
+  counter=0
+  while true
+    do
+      if [ $counter == "60" ]; then
+		counter=0
+		printf "\n    "
+      fi
+      counter=$((counter+1))
+      rsync -az --delete "${exclusions[@]}" --password-file=$pwd_file $mac $ubuntu
+      printf "$continuous"
+      sleep $interval
+    done
+  printf "n$complete.\n"
+  ;;
+
+$keydown)
+  printf "\n$downloading\n"
+  rsync -az --delete "${exclusions[@]}" --password-file=$pwd_file $ubuntu $mac
+  printf "\n$complete — "
+  ;;
+esac
+
+#———————————————————————————————————————— canceled
+
+if [[ $flag != '' ]]; then
+  printf "$close_lc.\n"
+  read x
+else
+  printf "\n$canceled\n"
+fi
+
+killall Terminal
+
+#———————————————————————————————————————— fin
