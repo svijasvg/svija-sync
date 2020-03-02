@@ -25,9 +25,9 @@ You can also use it to download all the files needed for working on your website
 
 `site='example.com'`  
 `user='example'`  
-`pass='rYlr#54Ktro'`
+`pass='#r4nd0m#'`
 
-*Save and quit TextEdit.*
+*Save the changes and quit TextEdit.*
 
 # Start the App
 
@@ -35,13 +35,13 @@ Rename the app to **sync.commmand**
 
 **Click twice** on the app to run it. You may see a warning:
 
-**"Svija Sync.command" can't be opened because it is from an unidentified developer.**
+    "Svija Sync.command" can't be opened because it is from an unidentified developer.
 
-To continue, open **System Preferences**, go to **Security and Privacy** and click on the "**General**" button.
+To continue, open **System Preferences** › **Security and Privacy** › **General**
 
 At the bottom you'll see:
 
-**"Svija Sync.command" was blocked form opening because it is not from an identified developer.**
+**"Svija Sync.command" was blocked from opening because it is not from an identified developer.**
 
 Click the button **[Open Anyway]**
 
