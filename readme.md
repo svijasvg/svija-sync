@@ -1,32 +1,55 @@
-[Version en français](https://github.com/svijasvg/mac-sync/blob/master/readme-fr.md)
+[Version en français](https://github.com/svijasvg/svija-sync/blob/master/readme-fr.md)
 
-# Download the script
+
+Svija Sync is a **script**, a tiny program that just does one thing.
+
+As long as it's running, will **keep your website synchronized with files on your computer**.
+
+You can also use it to synchronize in the other direction — to download files from your website.
+
+# Download the App
 
 1. Click the green button **Clone or download** at the top right of this page then choose **Download ZIP**.
 
-2. **Drag the appropriate script** (EN or FR version) into a work folder where site files will be kept.
+2. **Drag the appropriate app** (EN or FR version) into a work folder where website files will be kept.
 
-*Put the other files in the trash.*
+*Put the other files in the Trash.*
 
-# In TextEdit
+# Add Your Credentials
 
-1. **Click twice on the script** to open it in TextEdit.
+1. **Click twice on the app** to open it in TextEdit.
 
-2. In TextEdit's preferences, **uncheck "smart quotes"**.
+2. Replace the "**x**" on the fourth line with the **three lines of red text** in the email you've received from Svija.
 
-2. **Modify the two lines** at the top of the script using your project's login information (**site_url** & **user_id)**.
+*Save and quit TextEdit.*
 
-**It is extremely important that the straight quotes not be changed into smart (curly) quotes.**
+# Start the App
 
-*Quit TextEdit.*
+Rename the app to **sync.commmand**
 
-# Using script
+**Click twice** on the app to run it. You may see a warning:
 
-Rename the script to **sync.commmand**
+**"Svija Sync.command" can't be opened because it is from an unidentified developer.**
 
-**Click twice on the script** to start the initial syncronization.
+To continue, open **System Preferences**, go to **Security and Privacy** and click on the "**General**" button.
 
-Choose **Download** to create the **sync** folder containing the site files.
+At the bottom you'll see:
 
-You can now **double click the script to start syncronizing** the site (uploading or downloading).
+**"Svija Sync.command" was blocked form opening because it is not from an identified developer.**
+
+Click the button **[Open Anyway]**
+
+# Once the App is Running
+
+Choose **Download** to create the **sync** folder containing your website files.
+
+You now have everything you need to update your website in the **"sync" folder**.
+
+If you will be using Svija regularly, the [Svjia Illustrator scripts](https://github.com/svijasvg/illustrator-scripts) will make your life much easier. You can download them [here](https://github.com/svijasvg/illustrator-scripts).
+
+# General Usage
+
+Whenever you want to work on your website, **double-click "Svija Sync.comand" to start syncronizing** your website.
+
+As long as the app is running, your files will be synchronized every five seconds.
 

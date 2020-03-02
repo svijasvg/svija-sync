@@ -1,4 +1,4 @@
-[English version](https://github.com/svijasvg/mac-sync)
+[English version](https://github.com/svijasvg/svija-sync)
 
 # Téléchargement du script
 
