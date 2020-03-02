@@ -3,9 +3,9 @@
 
 Svija Sync is a **script**, a tiny app that just does one thing.
 
-As long as it's running, will **keep your website synchronized with files on your computer**.
+As long as it's running, it will **keep your website synchronized with your computer**.
 
-You can also use it to download all the files necessary to work on your website.
+You can also use it to download all the files needed for working on your website.
 
 # Download the App
 
@@ -13,15 +13,19 @@ You can also use it to download all the files necessary to work on your website.
 
 2. **Open the downloaded ZIP file** (if it didn't happen automatically).
 
-2. **Drag the appropriate app** (EN or FR version) into a new working folder where all your website files will be kept.
+2. **Drag the appropriate TXT document** (EN or FR version) into a new working folder where all your website files will be kept.
 
 *Put the other files in the Trash.*
 
 # Add Your Credentials
 
-1. **Click twice on the app** to open it in TextEdit.
+1. **Click twice on the TXT document** to open it in TextEdit.
 
-2. Replace the "**x**" on the fourth line with the **three lines of red text** in the email you've received from Svija.
+2. Replace the "**x**" on the fourth line with the **three lines of red text** in the email you've received from Svija:
+
+`site='example.com'`  
+`user='example'`  
+`pass='rYlr#54Ktro'`
 
 *Save and quit TextEdit.*
 
