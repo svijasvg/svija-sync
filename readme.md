@@ -49,7 +49,7 @@ Click the button **[Open Anyway]**
 
 Choose **Download** to create the **sync folder** containing your website files.
 
-The first time that you connect, **your computer will ask you to accept the authenticity of your web site**.
+The first time that you connect, **your computer will ask you to validate the identity of your web site**.
 
 You will see the following message:
 
@@ -57,13 +57,13 @@ You will see the following message:
 >ECDSA key fingerprint is SHA256:lkjdqmlfkjqsdf098sdflkj.  
 >Are you sure you want to continue connecting (yes/no)?
 
-Type "yes" then enter (not "y").
+**Type "yes" then enter** (not "y").
 
 The app will then download the files into a new folder "sync", in the same folder as the Svija Sync app.
 
 # What's Inside?
 
-Everything you need to update your website in this folder:
+Everything you need to update your website:
 
 * Illustrator source files
 * SVG files exported from Illustrator, that you'll never touch
