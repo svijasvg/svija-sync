@@ -23,9 +23,9 @@ You can also use it to download all the files needed for working on your website
 
 2. Replace the "**x**" on the fourth line with the **three lines of red text** in the email you've received from Svija:
 
-`site='example.com'`  
-`user='example'`  
-`pass='#r4nd0m#'`
+    site='example.com'
+    user='example'
+    pass='#r4nd0m#'
 
 *Save the changes and quit TextEdit.*
 
@@ -35,7 +35,7 @@ Rename the app to **sync.commmand**
 
 **Click twice** on the app to run it. You may see a warning:
 
-    "Svija Sync.command" can't be opened because it is from an unidentified developer.
+"Svija Sync.command" can't be opened because it is from an unidentified developer.
 
 To continue, open **System Preferences** › **Security and Privacy** › **General**
 
