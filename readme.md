@@ -1,7 +1,6 @@
 [Version en français](https://github.com/svijasvg/svija-sync/blob/master/readme-fr.md)
 
-
-Svija Sync is a **script**, a tiny app that just does one thing.
+Svija Sync is a **script**: a tiny app that just does one thing.
 
 As long as it's running, it will **keep your website synchronized with your computer**.
 
@@ -32,13 +31,13 @@ pass='#r4nd0m#'
 
 # Start the App
 
-Rename the TXT file to **sync.commmand**. This tells the Mac that it's no longer a text document but an app.
+Rename the TXT file to **Svija Sync.commmand**. This tells the Mac that it's no longer a text document but an app.
 
 **Click twice** on the app to run it. You may see a warning:
 
 >"Svija Sync.command" can't be opened because it is from an unidentified developer.
 
-To continue, open **System Preferences** › **Security and Privacy** › **General**
+To continue, open **System Preferences** › **Security and Privacy** › **General**.
 
 At the bottom you'll see a similar message:
 
@@ -50,20 +49,36 @@ Click the button **[Open Anyway]**
 
 Choose **Download** to create the **sync folder** containing your website files.
 
+The first time that you connect, **your computer will ask you to accept the authenticity of your web site**.
+
+You will see the following message:
+
+>The authenticitiy of host _____ can't be established.  
+>ECDSA key fingerprint is SHA256:lkjdqmlfkjqsdf098sdflkj.  
+>Are you sure you want to continue connecting (yes/no)?
+
+Type "yes" then enter (not "y").
+
+The app will then download the files into a new folder "sync", in the same folder as the Svija Sync app.
+
+# What's Inside?
+
 Everything you need to update your website in this folder:
 
 * Illustrator source files
 * SVG files exported from Illustrator, that you'll never touch
-* linked images, in a folder called "links"
-* web fonts and a "source" folder inside with Mac fonts
+* linked images, in a subfolder called "links"
+* web fonts and a "source" subfolder with Mac fonts
 * assorted images like the favicon, the icon for an iPhone shortcut, and a capture of the homepage that will be shown when the web site is posted to social media
 
 # General Usage
 
 Whenever you want to work on your website, **double-click "Svija Sync.comand" to start syncronizing** your website.
 
-As long as the app is running, your files will be synchronized every five seconds.
+As long as the app is running, your files will be synchronized every five seconds (a new red bar appears).
 
 # What Next?
 
-    If you will be using Svija regularly, the [Svjia Illustrator scripts](https://github.com/svijasvg/illustrator-scripts) will make your life much easier. You can download them [here](https://github.com/svijasvg/illustrator-scripts).
+If you will be using Svija regularly, the [Svjia Illustrator scripts](https://github.com/svijasvg/illustrator-scripts) will make your life much easier.
+
+You can download them [here](https://github.com/svijasvg/illustrator-scripts).
