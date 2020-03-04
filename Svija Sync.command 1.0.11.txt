@@ -9,13 +9,13 @@ x
 #
 #———————————————————————————————————————— language independent
 
-version='Svija Sync V1.0.10'
+version='Svija Sync V1.0.12'
 
 sync_folder='sync'
 none='\e[0;0m'
 red='\e[1;91m'
 
-#———————————————————————————————————————— localized french
+#———————————————————————————————————————— localized english
 
 keyup='U'
 keydown='D'
@@ -32,6 +32,7 @@ complete='Syncronisation complete'
     with='with'
     from='content of'
 downloading='Downloading from'
+do_not_close='Do not close this window.'
 
    close=$red"Quit Terminal$none to close"
 close_lc=$red"quit Terminal$none to close"
@@ -57,7 +58,7 @@ interval=5
 continuous='|'
 
 uploading="$replace $site $with \"$sync_folder\" $on $computer..."
-downloading="$downloading $folder \"$sync_folder\" $on $site..."
+downloading="$downloading $folder \"$sync_folder\" $on $site...\n$do_not_close"
 
 ubuntu="$user@$site::$user/$sync_folder"
 
