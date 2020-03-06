@@ -1,5 +1,7 @@
 [Version en français](https://github.com/svijasvg/svija-sync/blob/master/readme-fr.md)
 
+[Read at docs.svija.com](https://docs.svija.com/fr/tutorial-1-1-svija-sync)
+
 Svija Sync is a **script**: a tiny app that just does one thing.
 
 As long as it's running, it will **keep your website synchronized with your computer**.

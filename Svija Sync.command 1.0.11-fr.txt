@@ -39,7 +39,7 @@ close_lc=$red"quittez Terminal$none pour fermer"
 canceled="$red""Synchronisation annulée — $close_lc.$none\n"
 
 instructions="    $version
-    $red$server: $site
+    $red$server : $site
     utilisateur : $user
 $none
     $computer -> $wsite   $red$keyup$none""ploader
