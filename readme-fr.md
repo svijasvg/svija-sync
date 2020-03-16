@@ -77,7 +77,7 @@ Enlever la partie **après .command** :
 
 Vous êtes susceptible de voir l'avertissement suivant :
 
-![avertissement changement d'extension](https://docs.svija.com/wp-content/uploads/elementor/thumbs/avertissement-changement-dextension-om4d4yclgk2s0xhtyjdtytjs0yw7b0pl5sq57lkysc.png "avertissement changement d'extension")
+![avertissement changement d'extension](https://docs.svija.com/wp-content/uploads/elementor/thumbs/avertissement-changement-dextension-omnbsrj1hhojppnd206fdsw7n5c7a9vqcl0vvr8efw.jpg "avertissement changement d'extension")
 
 **Cliquer « Utiliser .command ».**
 
@@ -91,17 +91,17 @@ Le fait de changer l'extension du fichier veut dire que la prochaine fois qu'il 
 
 Si vous ne voyez pas cet avertissement vous pouvez continuer plus bas :
 
-![avertissement impossible d'ouvrir](https://docs.svija.com/wp-content/uploads/elementor/thumbs/avertissement-impossible-douvrir-om4dgd42f5pqoz1ck7t1tvv0v7nof6i27il7vr1ajo.png "avertissement impossible d'ouvrir")
+![avertissement impossible d'ouvrir](https://docs.svija.com/wp-content/uploads/elementor/thumbs/avertissement-impossible-douvrir-omnbtjq76irt4gmkpl8hk1qupkhadmhg9pdc8afyjo.jpg "avertissement impossible d'ouvrir")
 
 Pour continuer, aller dans les **Préférences Système › Sécurité et confidentialité › Général** :
 
-![avertissement bloqué](https://docs.svija.com/wp-content/uploads/elementor/thumbs/avertissement-bloqu%C3%A9-om4dmxzn160bkc85x8fghzre15jwnjrlh00t3kq37o.jpg "avertissement bloqué")
+![avertissement bloqué](https://docs.svija.com/wp-content/uploads/elementor/thumbs/avertissement-bloqué-omnbujg2e88sp41k4r60lyqg1wfhoinrrpq723yt38.jpg "avertissement bloqué")
 
 **Cliquez sur « Ouvrir quand même ».**
 
 Le script devrait alors démarrer normalement, et vous verrez :
 
-![svija sync - démarrage](https://docs.svija.com/wp-content/uploads/elementor/thumbs/svija-sync-d%C3%A9marrage-om4dol7dtpbs5svjpc22i43u0hjbyiqfgmzihl7qoo.png "svija sync -- démarrage")
+![svija sync - démarrage](https://docs.svija.com/wp-content/uploads/elementor/thumbs/svija-sync-démarrage-omnbv7vvbx1wco80rbg2v5ojr25n9y0bu670eu5viw.jpg "svija sync -- démarrage")
 
 **Appuyer sur la touche D puis retour**
 
