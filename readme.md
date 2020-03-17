@@ -1,4 +1,4 @@
-[Version en français](https://github.com/svijasvg/svija-sync/blob/master/readme-fr.md)
+[Version en français](https://github.com/svijasvg/svija-sync/blob/master/lisez-moi.md)
 
 [Read at docs.svija.com](https://docs.svija.com/fr/tutorial-1-1-svija-sync)
 
