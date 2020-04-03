@@ -1,6 +1,6 @@
 [English Version](https://github.com/svijasvg/svija-sync) · [Document source](https://docs.svija.com/fr/quick-start/1-1-svija-sync)
 
-Svija Sync 1.0.12
+Svija Sync 1.1.0
 -------------------------------------
 
 **Svija Sync** est un **script** : une petite appli qui ne fait qu'une tâche.
@@ -17,17 +17,18 @@ Version abrégée
 
 **Télécharger Svija Sync** sur [github.com/svijasvg/svija-sync](https://github.com/svijasvg/svija-sync).
 
-Créer un dossier de travail et mettre **Svija Sync.command x.x.xx-fr.txt** dedans.
+Créer un dossier de travail et mettre **Svija Sync.command 0.0.00-fr.txt** dedans.
 
-Ouvrir le fichier et **remplacer le « x » seul** par les trois lignes rouges dans le mail que vous avez reçu de Svija :
+Ouvrir le fichier et **remplacer le « x » seul** par les quatre lignes rouges dans le mail que vous avez reçu de Svija :
 
+    name='Prenom'  
     site='example.com'  
     user='example'  
     pass='eY-v354strs'  
 
-Renommer le script* :
+**Remplacer « Prenom » avec votre prenom**, puis renommer le script* :
 
-    sync.command 0.0.00 FR.txt devient  
+    sync.command 0.0.0-fr.txt devient  
     sync.command
 
 **Cliquer deux fois** sur Svija-Sync.command pour le démarrer.*
@@ -52,7 +53,7 @@ Version exhaustive
 #### Déplacer Svija Sync
 
 1.  Créer un **dossier de travail** pour votre site web
-2.  **Glisser sync.command x.x.xx-fr.txt** dans le dossier
+2.  **Glisser Svija Sync.command 0.0.0-fr.txt** dans le dossier
 3.  Mettre les autres fichiers **dans la corbeille**
 
 * * * * *
@@ -61,7 +62,7 @@ Version exhaustive
 
 Sur votre ordinateur :
 
-1.  **Cliquer deux fois sur sync.command x.x.xx-fr.txt** pour l'ouvrir dans TextEdit
+1.  **Cliquer deux fois sur Svija Sync.command 0.0.0-fr.txt** pour l'ouvrir dans TextEdit
 2.  **Remplacer le « x » seul** par les trois lignes rouges dans le mail que vous avez reçu de Svija :  
     site='example.com'  
     user='example'  
@@ -72,8 +73,8 @@ Sur votre ordinateur :
 Enlever la partie **après .command** :
 
 
-    sync.command x.x.xx-fr.txt   devient  
-    sync.command
+    Svija Sync.command 0.0.0-fr.txt   devient  
+    Svija Sync.command
 
 Vous êtes susceptible de voir l'avertissement suivant :
 
@@ -87,7 +88,7 @@ Le fait de changer l'extension du fichier veut dire que la prochaine fois qu'il 
 
 #### Démarrer Svija Sync
 
-**Cliquer deux fois** sur Svija-Sync.command pour le démarrer.
+**Cliquer deux fois** sur Svija Sync.command pour le démarrer.
 
 Si vous ne voyez pas cet avertissement vous pouvez continuer plus bas :
 
@@ -117,6 +118,7 @@ Vous verrez un message en anglais :
 
 L'application téléchargera alors les fichiers dans un nouveau dossier « sync », à côté de Svija Tools :
 
+-   **admin** : logo et couleurs pour Svija Admin
 -   **desktop** : contenus du site, version ordinateur
 -   **fonts** : polices nécessaires
 -   **images** : favicon, Apple touch icon, capture de la page d'accueil
