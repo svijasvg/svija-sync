@@ -17,7 +17,7 @@ Version abrégée
 
 **Télécharger Svija Sync** sur [github.com/svijasvg/svija-sync](https://github.com/svijasvg/svija-sync).
 
-Créer un dossier de travail et mettre **Svija Sync.command 0.0.00-fr.txt** dedans.
+Créer un dossier de travail et mettre **Svija Sync.command 0.0.0-fr.txt** dedans.
 
 Ouvrir le fichier et **remplacer le « x » seul** par les quatre lignes rouges dans le mail que vous avez reçu de Svija :
 
