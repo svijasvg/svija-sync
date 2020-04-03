@@ -1,0 +1,2 @@
+200403 v 1.1.0
+  added message of the day from msg.svija.com/fr or /en
