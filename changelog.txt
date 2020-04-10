@@ -1,2 +1,12 @@
+200404 v 1.1.1
+  prompt for name instead of pasting it in
+  one-touch query responses
+  lots of refactoring
+
 200403 v 1.1.0
   added message of the day from msg.svija.com/fr or /en
+
+———————————————————————————————————————— next
+
+move more info to msg.svija.com
+move everything to while someone is reading intro (checking name, rsynching last)
