@@ -24,7 +24,7 @@ x
       keyyes='O'
        keyno='N'
 
-  whats_name='Quel est votre psuedo ?'
+  whats_name='Quel est votre prénom ?'
   name_error="Caractères possibles :\n\n2-30 lettres, le tiret, le point et l'espace. Pas d'accent."
           on='sur'
     computer='votre ordinateur'
@@ -32,21 +32,21 @@ x
       server='site web'
       folder='dossier'
      replace='Synchronisation de'
-    finished='Syncronisation terminée'
+    finished='Synchronisation terminée'
         with='avec'
         from='contenus de'
  downloading='Téléchargement de'
 do_not_close='Ne fermez pas la fenêtre.'
      nothing='Rien à télécharger.'
      user_id='utilisateur'
-  first_name='pseudo '
+  first_name='prénom '
 
        uload="$red$keyup$none""ploader"
        dload="$red$keydown$none""ownloader"
 
       choose='Choisissez une option (retour pour annuler) '
-    close_uc=$red"Appuyer une touche$none pour fermer"
-    close_lc=$red"appuyer retour$none pour fermer"
+    close_uc=$red"Appuyer sur retour$none pour fermer"
+    close_lc=$red"appuyer sur retour$none pour fermer"
 
     canceled="$red""Synchronisation annulée — $close_lc.$none\n"
 
@@ -370,6 +370,6 @@ fi
 #———————————————————————————————————————— finished
 
 printf "\nkillall Terminal\n\n"
-#killall Terminal
+killall Terminal
 
 #———————————————————————————————————————— fin

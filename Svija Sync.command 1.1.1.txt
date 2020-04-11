@@ -15,46 +15,46 @@ x
         none=`echo $'\e[0;0m'`
           cr=`echo $'\012\015'`
 
-#———————————————————————————————————————— localized French
+#———————————————————————————————————————— localized English
 
-        motd=$(curl -Ls msg.svija.com/$version/fr.txt)
+        motd=$(curl -Ls msg.svija.com/$version/en.txt)
 
        keyup='U'
      keydown='D'
-      keyyes='O'
+      keyyes='Y'
        keyno='N'
 
-  whats_name='Quel est votre psuedo ?'
-  name_error="Caractères possibles :\n\n2-30 lettres, le tiret, le point et l'espace. Pas d'accent."
-          on='sur'
-    computer='votre ordinateur'
+  whats_name='What is your first name?'
+  name_error="Allowed characters:\n\n2-30 letters, dash, period and space. No accents."
+          on='on'
+    computer='your computer'
        wsite='site'
-      server='site web'
-      folder='dossier'
-     replace='Synchronisation de'
-    finished='Syncronisation terminée'
-        with='avec'
-        from='contenus de'
- downloading='Téléchargement de'
-do_not_close='Ne fermez pas la fenêtre.'
-     nothing='Rien à télécharger.'
-     user_id='utilisateur'
-  first_name='pseudo '
+      server='website'
+      folder='folder'
+     replace='Synchronizing'
+    finished='Synchronization complete'
+        with='with'
+        from='content of'
+ downloading='Downloading from'
+do_not_close='Do not close this window.'
+     nothing='Nothing to upload.'
+     user_id='user'
+  first_name='name'
 
-       uload="$red$keyup$none""ploader"
-       dload="$red$keydown$none""ownloader"
+       uload="$red$keyup$none""pload"
+       dload="$red$keydown$none""ownload"
 
-      choose='Choisissez une option (retour pour annuler) '
-    close_uc=$red"Appuyer une touche$none pour fermer"
-    close_lc=$red"appuyer retour$none pour fermer"
+      choose='Choose an option (return to cancel)'
+    close_uc=$red"Press return$none to close"
+    close_lc=$red"press return$none to close"
 
-    canceled="$red""Synchronisation annulée — $close_lc.$none\n"
+    canceled="$red""Synchronization canceled — $close_lc.$none\n"
 
-     warning="$red""Remplacer $folder \"$sync_folder\" $on $computer$none — êtes-vous sûr ? [$keyyes/$keyno]:"
-    warning2="a modifié le site$none depuis votre intervention. Continuer ? [$keyyes/$keyno]:"
+     warning="$red""Replace $folder \"$sync_folder\" $on $computer$none — are you sure? [$keyyes/$keyno]:"
+    warning2="has modified the site$none since your last upload. Continue? [$keyyes/$keyno]:"
    uploading="$replace $site $with \"$sync_folder\" $on $computer..."
  downloading="$downloading $folder \"$sync_folder\" $on $site...\n$do_not_close"
-  bad_choice="Choix non-valide — $close_lc."
+  bad_choice="Invalid choice — $close_lc."
 
 #———————————————————————————————————————— instructions
 
@@ -370,6 +370,6 @@ fi
 #———————————————————————————————————————— finished
 
 printf "\nkillall Terminal\n\n"
-#killall Terminal
+killall Terminal
 
 #———————————————————————————————————————— fin
