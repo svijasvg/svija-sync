@@ -1,6 +1,7 @@
-[Version en français](https://github.com/svijasvg/svija-sync/blob/master/lisez-moi.md)
+[En français](https://github.com/svijasvg/svija-sync/blob/master/lisez-moi.md) · [Document Source](https://docs.svija.com/fr/tutorial-1-1-svija-sync)
 
-[Read at docs.svija.com](https://docs.svija.com/fr/tutorial-1-1-svija-sync)
+Svija Sync 1.1.1
+-------------------------------------
 
 Svija Sync is a **script**: a tiny app that just does one thing.
 

@@ -1,6 +1,6 @@
 [English Version](https://github.com/svijasvg/svija-sync) · [Document source](https://docs.svija.com/fr/quick-start/1-1-svija-sync)
 
-Svija Sync 1.1.0
+Svija Sync 1.1.1
 -------------------------------------
 
 **Svija Sync** est un **script** : une petite appli qui ne fait qu'une tâche.
