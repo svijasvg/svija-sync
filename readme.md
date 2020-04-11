@@ -1,87 +1,122 @@
-[En français](https://github.com/svijasvg/svija-sync/blob/master/lisez-moi.md) · [Document Source](https://docs.svija.com/fr/tutorial-1-1-svija-sync)
+[En français](https://github.com/svijasvg/svija-sync/blob/master/lisez-moi.md) · [Document Source](https://docs.svija.com/en/quick-start/1-1-svija-sync)
 
 Svija Sync 1.1.1
 -------------------------------------
 
-Svija Sync is a **script**: a tiny app that just does one thing.
+**Svija** Sync is a **script**: a small application that only does one thing.
 
-As long as it's running, it will **keep your website synchronized with your computer**.
+As long as it's running, **it synchronizes your website with your computer.**
 
-You can also use it to download all the files needed for working on your website.
+You can also use it to download the complete set of files needed to work on your website.
 
-# Download the App
+Short Version
+-------------
 
-1. Click the green button **Clone or download** at the top right of this page then choose **Download ZIP**.
+*For experienced users; see below for an exhaustive description.
+*An asterisk indicates that you may see a security alert for this step.*
 
-2. **Open the downloaded ZIP file** (if it didn't happen automatically).
+**Download Svija Sync** from [github.com/svijasvg/svija-sync](https://github.com/svijasvg/svija-sync).
 
-2. **Drag the appropriate TXT document** (English or French) into a new working folder where all your website files will be kept.
+Create a work folder and put **Svija Sync.command 0.0.0.txt** in it.
 
-*Put the other files in the Trash.*
+Open the file and **replace the single "x"** with the three lines of red text in the email you got from Svija :
 
-# Add Your Credentials
+    site='example.com'
+user='example'
+pass='eY-v354strs'
 
-1. **Click twice on the TXT document** to open it in TextEdit.
+Then rename the script:* 
 
-2. **Replace the "**x**"** on the fourth line with the **three lines of red text** in the email you've received from Svija:  
+    sync.command 0.0.0-fr.txt becomes
+sync.command
 
-```
-site='example.com'  
-user='example'  
-pass='#r4nd0m#'  
-```
-*Save the changes and quit TextEdit.*
+**Click twice** on Svija Sync.command to start the script.*
 
-# Start the App
+The first time you run it, choose **Download.***
 
-Rename the TXT file to **Svija Sync.commmand**. This tells the Mac that it's no longer a text document but an app.
+The script will download all the files for you site into **a new folder called "sync"**, in the same place as Svija Sync.
 
-**Click twice** on the app to run it. You may see a warning:
+Complete Version
+----------------
 
->"Svija Sync.command" can't be opened because it is from an unidentified developer.
+#### Download Svija Sync
 
-To continue, open **System Preferences** › **Security and Privacy** › **General**.
+1.  navigate to [github.com/svijasvg/svija-sync](https://github.com/svijasvg/svija-sync)
+2.  click on  **Clone or download** (green button)
+3.  choose **Download ZIP**
 
-At the bottom you'll see a similar message:
+**Open the downloaded ZIP file** (if it didn't happen automatically).
 
->"Svija Sync.command" was blocked from opening because it is not from an identified developer.
+* * * * *
 
-Click the button **[Open Anyway]**
+#### Move Svija Sync
 
-# Once the App is Running
+1.  Create a **work folder** for your new website
+2.  **Drag Svija Sync.command 0.0.0.txt** into the folder
+3.  Put the other files **in the trash**.
 
-Choose **Download** to create the **sync folder** containing your website files.
+* * * * *
 
-The first time that you connect, **your computer will ask you to validate the identity of your web site**.
+#### Configure Svija Sync
 
-You will see the following message:
+On your computer:
 
->The authenticitiy of host _____ can't be established.  
->ECDSA key fingerprint is SHA256:lkjdqmlfkjqsdf098sdflkj.  
->Are you sure you want to continue connecting (yes/no)?
+1.  **Double click Svija Sync.comand 0.0.0.txt **to open it in TextEdit
+2.  **Replace the single "x"** with the three lines of red text in the email you received from Svija:
+    site='example.com'
+    user='example'
+    pass='eY-v354strs'
+3.  **Close** the file
+4.  **Rename the file** to remove the part after .command:
 
-**Type "yes" then enter** (not "y").
+    Svija Sync.command 0.0.0-fr.txt becomes
+Svija Sync.command
 
-The app will then download the files into a new folder "sync", in the same folder as the Svija Sync app.
+You may see the following warning:
 
-# What's Inside?
+![finder-extension-change](https://docs.svija.com/wp-content/uploads/elementor/thumbs/finder-extension-change-onwwosepuqtvpw8jx7nf86l79qukvnq1zyin4gjxuk.jpg "finder-extension-change")
 
-Everything you need to update your website:
+**Click "Use .command".**
 
-* Illustrator source files
-* SVG files exported from Illustrator, that you'll never touch
-* linked images, in a subfolder called "links"
-* web fonts and a "source" subfolder with Mac fonts
-* assorted images like the favicon, the icon for an iPhone shortcut, and a capture of the homepage that will be shown when the web site is posted to social media
+Changing the filename extension means that the next time the file is opened, it will be launched as an application rather than opened as a text file.
 
-# General Usage
+* * * * *
 
-Whenever you want to work on your website, **double-click "Svija Sync.comand" to start syncronizing** your website.
+#### Launch Svija Sync
 
-As long as the app is running, your files will be synchronized every five seconds (a new bar appears).
+**Double click** **Svija Sync.command** to launch it.
 
-# What Next?
+If you do not see the following warning, you can skip the next step:
 
-If you will be using Svija regularly, the [Svjia Illustrator scripts](https://github.com/svijasvg/illustrator-scripts) will make your life much easier.
+![can't-be-opened](https://docs.svija.com/wp-content/uploads/elementor/thumbs/cant-be-opened-onwworgvnwt2l0ubilqgmgiy76vjjb2x1k2xqv9wtg.jpg "can't-be-opened")
 
-You can download them [here](https://github.com/svijasvg/illustrator-scripts).
+To continue, go in to **System Preferences › Security & Privacy › General**:
+
+![security-preferences](https://docs.svija.com/wp-content/uploads/elementor/thumbs/security-preferences-onwwosepuqymrt7ld70dqsk3aaowqhgciauxnzx490.jpg "security-preferences")
+
+**Click "Open Anyway"**
+
+The script should launch normally. You'll be asked for your name, and then you'll see:
+
+![Svija-Sync-startup](https://docs.svija.com/wp-content/uploads/elementor/thumbs/Svija-Sync-startup-onwwouae8ex4iamhc03s15ljb95vesv44xi99wktko.jpg "Svija-Sync-startup")
+
+**Press D for Download**
+
+The first time you connect to your website, your computer will ask you to accept its authenticity.
+
+You'll see the following message:
+
+    The authenticitiy of host name & IP of your site can't be established...
+ECDSA key fingerprint is SHA256:lkjdqmlfkjqsdf098sdflkj...
+Are you sure you want to continue connecting (yes/no)?
+
+**You must type "yes" **then return (not just y).
+
+The application will then download your site files in **a new folder called "sync"** in the same folder as Svija Sync:
+
+-   **admin**: logo and colors for Svija Admin
+-   **desktop**: site content, desktop version
+-   **fonts**: necessary fonts
+-   **images**: favicon, Apple touch icon & homepage capture
+-   **mobile**: site content, mobile versionmobile
+-   **scripts**: scripts used for animations and special effects

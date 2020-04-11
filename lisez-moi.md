@@ -30,11 +30,11 @@ Puis renommer le script* :
     sync.command 0.0.0-fr.txt devient  
     sync.command
 
-**Cliquer deux fois** sur Svija-Sync.command pour le démarrer.*
+**Cliquer deux fois** sur Svija Sync.command pour le démarrer.*
 
 Au premier démarrage, choisir **Downloader**.*
 
-Le script téléchargera tous les fichiers de votre site dans **un nouveau dossier « sync »**, à côté de Svija Tools.
+Le script téléchargera tous les fichiers de votre site dans **un nouveau dossier « sync »**, à côté de Svija Sync.
 
 Version exhaustive
 ------------------
@@ -99,7 +99,7 @@ Pour continuer, aller dans les **Préférences Système › Sécurité et confi
 
 **Cliquez sur « Ouvrir quand même ».**
 
-Le script devrait alors démarrer normalement, et vous verrez :
+Le script devrait alors démarrer normalement. Votre prénom sera demandé puis vous verrez :
 
 ![svija sync - démarrage](https://docs.svija.com/wp-content/uploads/elementor/thumbs/svija-sync-démarrage-omnbv7vvbx1wco80rbg2v5ojr25n9y0bu670eu5viw.jpg "svija sync -- démarrage")
 
@@ -115,11 +115,11 @@ Vous verrez un message en anglais :
 
 **Il faut taper « yes »** puis retour (et non pas y).
 
-L'application téléchargera alors les fichiers dans un nouveau dossier « sync », à côté de Svija Tools :
+L'application téléchargera alors les fichiers dans un nouveau dossier « sync », à côté de Svija Sync :
 
 -   **admin** : logo et couleurs pour Svija Admin
 -   **desktop** : contenus du site, version ordinateur
 -   **fonts** : polices nécessaires
--   **images** : favicon, Apple touch icon, capture de la page d'accueil
+-   **images** : favicon, Apple touch icon & capture de la page d'accueil
 -   **mobile** : contenus du site, version mobile
 -   **scripts** : scripts utilisés pour animations, effets spéciaux etc.
