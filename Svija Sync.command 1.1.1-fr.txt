@@ -45,7 +45,7 @@ do_not_close='Ne fermez pas la fenêtre.'
        dload="$red$keydown$none""ownloader"
 
       choose='Choisissez une option (retour pour annuler) '
-    close_uc=$red"Appuyer sur retour$none pour fermer"
+    upload_close=$red"Quittez Terminal$none pour fermer"
     close_lc=$red"appuyer sur retour$none pour fermer"
 
     canceled="$red""Synchronisation annulée — $close_lc.$none\n"
@@ -332,7 +332,7 @@ then
     read -n 1 close
 
   else
-    printf "\n$uploading\n\n    $close_uc\n    "
+    printf "\n$uploading\n\n    $upload_close\n    "
     echo $name > "$sync_folder/$last_file"
     counter=0
   
