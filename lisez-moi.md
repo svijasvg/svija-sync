@@ -19,14 +19,13 @@ Version abrégée
 
 Créer un dossier de travail et mettre **Svija Sync.command 0.0.0-fr.txt** dedans.
 
-Ouvrir le fichier et **remplacer le « x » seul** par les quatre lignes rouges dans le mail que vous avez reçu de Svija :
+Ouvrir le fichier et **remplacer le « x » seul** par les trois lignes rouges dans le mail que vous avez reçu de Svija :
 
-    name='Prenom'  
     site='example.com'  
     user='example'  
     pass='eY-v354strs'  
 
-**Remplacer « Prenom » avec votre prenom**, puis renommer le script* :
+Puis renommer le script* :
 
     sync.command 0.0.0-fr.txt devient  
     sync.command
