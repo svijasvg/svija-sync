@@ -45,7 +45,7 @@ do_not_close='Do not close this window.'
        dload="$red$keydown$none""ownload"
 
       choose='Choose an option (return to cancel)'
-upload_close=$red"Quit Terminal$none to close"
+upload_close=$red"Type x$none to close..."
     close_lc=$red"press return$none to close"
 
     canceled="$red""Synchronization canceled — $close_lc.$none\n"
@@ -336,7 +336,8 @@ then
     echo $name > "$sync_folder/$last_file"
     counter=0
   
-    while true
+    unset user_input
+    while [[ "${user_input}" != 'x' ]]
       do
         if [ $counter == "60" ]; then
           counter=0
@@ -346,7 +347,7 @@ then
         rsync -az --delete "${exclusions[@]}" --password-file=$pwd_file "$sync_folder/" $ubuntu
         printf "|"
         counter=$((counter+1))
-        sleep $interval
+        read -t $interval -n 1 user_input
       done
   fi
 fi
