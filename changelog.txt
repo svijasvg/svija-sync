@@ -2,6 +2,7 @@
   prompt for name instead of pasting it in
   one-touch query responses
   lots of refactoring
+  x to quit instead of quitting terminal
 
 200403 v 1.1.0
   added message of the day from msg.svija.com/fr or /en
@@ -9,4 +10,4 @@
 ———————————————————————————————————————— next
 
 move more info to msg.svija.com
-move everything to while someone is reading intro (checking name, rsynching last)
+move time consuming tasts to after inital message is presented, before accepting choice of tasks (checking name, rsynching last)
