@@ -12,7 +12,7 @@ You can also use it to download the complete set of files needed to work on your
 Short Version
 -------------
 
-*For experienced users; see below for an exhaustive description.
+*For experienced users; see below for a more complete description.
 *An asterisk indicates that you may see a security alert for this step.*
 
 **Download Svija Sync** from [github.com/svijasvg/svija-sync](https://github.com/svijasvg/svija-sync).
@@ -96,7 +96,7 @@ To continue, go in to **System Preferences › Security & Privacy › General**
 
 **Click "Open Anyway"**
 
-The script should launch normally. You'll be asked for your name, and then you'll see:
+The script should launch normally:
 
 ![Svija-Sync-startup](https://docs.svija.com/wp-content/uploads/elementor/thumbs/Svija-Sync-startup-onwwouae8ex4iamhc03s15ljb95vesv44xi99wktko.jpg "Svija-Sync-startup")
 
