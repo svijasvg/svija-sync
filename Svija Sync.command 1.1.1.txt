@@ -370,7 +370,6 @@ fi
 
 #———————————————————————————————————————— finished
 
-printf "\nkillall Terminal\n\n"
-killall Terminal
+osascript -e 'tell application "Terminal" to close first window' & exit
 
 #———————————————————————————————————————— fin
