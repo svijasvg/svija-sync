@@ -1,5 +1,5 @@
 [English Version](https://github.com/svijasvg/svija-sync) · [Document source](https://docs.svija.com/fr/quick-start/1-1-svija-sync)
-![Svija: SVG-based websites built in Adobe Illustrator](http://files.svija.com/github/readme-logo.jpg "Svija: SVG-based websites built in Adobe Illustrator")
+![Svija: SVG-based websites built in Adobe Illustrator](http://files.svija.com/github/readme-logo.jpg?1 "Svija: SVG-based websites built in Adobe Illustrator")
 
 Svija Sync 1.1.1
 -------------------------------------
