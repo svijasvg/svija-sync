@@ -51,7 +51,7 @@ Complete Version
 #### Move Svija Sync
 
 1.  Create a **work folder** for your new website
-2.  **Drag Svija Sync.command 0.0.0.txt** into the folder
+2.  **Drag "Svija Sync.command 0.0.0.txt"** into the folder
 3.  Put the other files **in the trash**.
 
 * * * * *
@@ -106,8 +106,8 @@ The first time you connect to your website, your computer will ask you to accept
 You'll see the following message:
 
     The authenticitiy of host name & IP of your site can't be established...
-ECDSA key fingerprint is SHA256:lkjdqmlfkjqsdf098sdflkj...
-Are you sure you want to continue connecting (yes/no)?
+    ECDSA key fingerprint is SHA256:lkjdqmlfkjqsdf098sdflkj...
+    Are you sure you want to continue connecting (yes/no)?
 
 **You must type "yes" **then return (not just y).
 
