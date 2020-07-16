@@ -31,9 +31,7 @@ Then rename the script:* 
     sync.command 0.0.0-fr.txt   becomes
     sync.command
 
-**Click twice** on Svija Sync.command to start the script.*
-
-The first time you run it, choose **Download.***
+**Click twice** on Svija Sync.command to start the script,* then choose **Download.***
 
 The script will download all the files for you site into **a new folder called "sync"**, in the same place as Svija Sync.
 
