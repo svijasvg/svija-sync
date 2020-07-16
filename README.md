@@ -23,13 +23,13 @@ Create a work folder and put **Svija Sync.command 0.0.0.txt** in it.
 Open the file and **replace the single "x"** with the three lines of red text in the email you got from Svija :
 
     site='example.com'
-user='example'
-pass='eY-v354strs'
+    user='example'
+    pass='eY-v354strs'
 
 Then rename the script:* 
 
-    sync.command 0.0.0-fr.txt becomes
-sync.command
+    sync.command 0.0.0-fr.txt   becomes
+    sync.command
 
 **Click twice** on Svija Sync.command to start the script.*
 
