@@ -109,7 +109,7 @@ You'll see the following message:
     ECDSA key fingerprint is SHA256:lkjdqmlfkjqsdf098sdflkj...
     Are you sure you want to continue connecting (yes/no)?
 
-**You must type "yes" **then return (not just y).
+**You must type "yes"** followed by return (not just y).
 
 The application will then download your site files in **a new folder called "sync"** in the same folder as Svija Sync:
 
