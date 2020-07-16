@@ -13,7 +13,7 @@ You can also use it to download the complete set of files needed to work on your
 Short Version
 -------------
 
-*For experienced users; see below for a more complete description.*
+*For experienced users; see below for a more complete description.*    
 **An asterisk** indicates that you may see a security alert for this step.
 
 **Download Svija Sync** from [github.com/svijasvg/svija-sync](https://github.com/svijasvg/svija-sync).
