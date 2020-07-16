@@ -43,7 +43,7 @@ Version exhaustive
 #### Télécharger Svija Sync
 
 1.  Aller sur [github.com/svijasvg/svija-sync](https://github.com/svijasvg/svija-sync)
-2.  Cliquer sur **Clone or download** (bouton vert)
+2.  Cliquer sur **Code** (bouton vert)
 3.  Sélectionner **Download ZIP**
 
 **Ouvrir le fichier ZIP téléchargé** (s'il ne s'est pas ouvert automatiquement).

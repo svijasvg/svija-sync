@@ -41,7 +41,7 @@ Complete Version
 #### Download Svija Sync
 
 1.  navigate to [github.com/svijasvg/svija-sync](https://github.com/svijasvg/svija-sync)
-2.  click on  **Clone or download** (green button)
+2.  click on  **Code** (green button)
 3.  choose **Download ZIP**
 
 **Open the downloaded ZIP file** (if it didn't happen automatically).
