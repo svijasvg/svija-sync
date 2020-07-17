@@ -16,7 +16,7 @@ Short Version
 *For experienced users; see below for a more complete description.*    
 **An asterisk** indicates that you may see a security alert for this step.
 
-**Download Svija Sync** from [github.com/svijasvg/svija-sync](https://github.com/svijasvg/svija-sync).
+**Download Svija Sync** via [this link](https://github.com/svijasvg/svija-sync/archive/master.zip).
 
 Create a work folder and put **Svija Sync.command 0.0.0.txt** in it.
 
@@ -39,6 +39,8 @@ Complete Version
 ----------------
 
 #### Download Svija Sync
+
+Download [this zip file](https://github.com/svijasvg/svija-sync/archive/master.zip), or
 
 1.  navigate to [github.com/svijasvg/svija-sync](https://github.com/svijasvg/svija-sync)
 2.  click on  **Code** (green button)

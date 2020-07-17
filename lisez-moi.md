@@ -16,20 +16,20 @@ Version abrégée
 *Pour utilisateurs avisés ; voir plus bas pour la description exhaustive.
 **Un astérisque indique qu'il peut y avoir une alerte sécuritaire au moment de la manipulation.
 
-**Télécharger Svija Sync** sur [github.com/svijasvg/svija-sync](https://github.com/svijasvg/svija-sync).
+**Télécharger Svija Sync** vi ce lien](https://github.com/svijasvg/svija-sync/archive/master.zip).
 
 Créer un dossier de travail et mettre **Svija Sync.command 0.0.0-fr.txt** dedans.
 
 Ouvrir le fichier et **remplacer le « x » seul** par les trois lignes rouges dans le mail que vous avez reçu de Svija :
 
     site='example.com'
-user='example'
-pass='eY-v354strs'
+    user='example'
+    pass='eY-v354strs'
 
 Puis renommer le script* :
 
     sync.command 0.0.0-fr.txt devient
-sync.command
+    sync.command
 
 **Cliquer deux fois** sur Svija Sync.command pour le démarrer.*
 
@@ -41,6 +41,8 @@ Version exhaustive
 ------------------
 
 #### Télécharger Svija Sync
+
+Télécharger [le fichier.zip](https://github.com/svijasvg/svija-sync/archive/master.zip), ou
 
 1.  Aller sur [github.com/svijasvg/svija-sync](https://github.com/svijasvg/svija-sync)
 2.  Cliquer sur **Code** (bouton vert)
@@ -108,8 +110,8 @@ La première fois que vous vous connectez à votre site, votre ordinateur vous d
 Vous verrez un message en anglais :
 
     The authenticitiy of host nom & IP de votre site can't be established...
-ECDSA key fingerprint is SHA256:lkjdqmlfkjqsdf098sdflkj...
-Are you sure you want to continue connecting (yes/no)?
+    ECDSA key fingerprint is SHA256:lkjdqmlfkjqsdf098sdflkj...
+    Are you sure you want to continue connecting (yes/no)?
 
 **Il faut taper « yes »** puis retour (et non pas y).
 
