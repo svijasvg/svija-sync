@@ -372,7 +372,7 @@ if [[ $flag == $upload ]]; then
       counter=$((counter+1))
       if [ $counter == "60" ]; then
         counter=0
-        printf "\e]22;0H\e[K    "
+        printf "\e[22;0H\e[K    "
       fi
       printf "$char"
       read -t $interval -n 1 user_input
