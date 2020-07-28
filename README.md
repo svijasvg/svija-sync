@@ -1,7 +1,7 @@
 [En français](https://github.com/svijasvg/svija-sync/blob/master/lisez-moi.md) · [Source Document](https://docs.svija.com/en/quick-start/1-1-svija-sync)
 ![Svija: SVG-based websites built in Adobe Illustrator](http://files.svija.com/github/readme-logo.png "Svija: SVG-based websites built in Adobe Illustrator")
 
-Svija Sync 1.1.1
+Svija Sync 1.1.2
 -------------------------------------
 
 **Svija** Sync is a **script**: a small application that only does one thing.
@@ -13,8 +13,8 @@ You can also use it to download the complete set of files needed to work on your
 Short Version
 -------------
 
-*For experienced users; see below for a more complete description.*    
-**An asterisk** indicates that you may see a security alert for this step.
+*For experienced users; see below for a more complete description.
+*An asterisk indicates that you may see a security alert for this step.*
 
 **Download Svija Sync** via [this link](https://github.com/svijasvg/svija-sync/archive/master.zip).
 
@@ -23,15 +23,17 @@ Create a work folder and put **Svija Sync.command 0.0.0.txt** in it.
 Open the file and **replace the single "x"** with the three lines of red text in the email you got from Svija :
 
     site='example.com'
-    user='example'
-    pass='eY-v354strs'
+user='example'
+pass='eY-v354strs'
 
 Then rename the script:* 
 
-    sync.command 0.0.0-fr.txt   becomes
-    sync.command
+    sync.command 0.0.0-fr.txt becomes
+sync.command
 
-**Click twice** on Svija Sync.command to start the script,* then choose **Download.***
+**Click twice** on Svija Sync.command to start the script.*
+
+The first time you run it, choose **Download.***
 
 The script will download all the files for you site into **a new folder called "sync"**, in the same place as Svija Sync.
 
@@ -40,9 +42,9 @@ Complete Version
 
 #### Download Svija Sync
 
-Download [this zip file](https://github.com/svijasvg/svija-sync/archive/master.zip), or
+Download [this .zip file](https://github.com/svijasvg/svija-sync/archive/master.zip), or:
 
-1.  navigate to [github.com/svijasvg/svija-sync](https://github.com/svijasvg/svija-sync)
+1.  visit [github.com/svijasvg/svija-sync](https://github.com/svijasvg/svija-sync)
 2.  click on  **Code** (green button)
 3.  choose **Download ZIP**
 
@@ -53,7 +55,7 @@ Download [this zip file](https://github.com/svijasvg/svija-sync/archive/master.z
 #### Move Svija Sync
 
 1.  Create a **work folder** for your new website
-2.  **Drag "Svija Sync.command 0.0.0.txt"** into the folder
+2.  **Drag Svija Sync.command 0.0.0.txt** into the folder
 3.  Put the other files **in the trash**.
 
 * * * * *
@@ -62,15 +64,23 @@ Download [this zip file](https://github.com/svijasvg/svija-sync/archive/master.z
 
 On your computer:
 
-1.  **Double click Svija Sync.comand 0.0.0.txt **to open it in TextEdit
-2.  **Replace the single "x"** with the three lines of red text in the email you received from Svija:
-    site='example.com'
-    user='example'
-    pass='eY-v354strs'
-3.  **Close** the file
-4.  **Rename the file** to remove the part after .command:
+**Double click Svija Sync.comand 0.0.0.txt **to open it in TextEdit.
 
-    Svija Sync.command 0.0.0-fr.txt becomes
+**Look for the single "x"** on the fourth line of text:
+
+![sync-te-en-x](https://docs.svija.com/wp-content/uploads/elementor/thumbs/sync-te-en-x-1-ot4im2e1tuzkez0psre5kwijus9elm2egg35gmx9rs.jpg "sync-te-en-x")
+
+**Replace the single "x"** with the three lines of red text in the email you received from Svija:
+
+    site='example.com'
+user='example'
+pass='lYtr384Ytrs'
+
+![sync-te-en-coords](https://docs.svija.com/wp-content/uploads/2020/07/sync-te-en-coords.jpg "sync-te-en-coords")
+
+**Close** the file, then **rename it** to remove the part after .command:
+
+    Svija Sync.command 0.0.0.txt becomes
 Svija Sync.command
 
 You may see the following warning:
@@ -97,9 +107,21 @@ To continue, go in to **System Preferences › Security & Privacy › General**
 
 **Click "Open Anyway"**
 
-The script should launch normally:
+The script should launch normally, and you will be asked for your name:
 
-![Svija-Sync-startup](https://docs.svija.com/wp-content/uploads/elementor/thumbs/Svija-Sync-startup-onwwouae8ex4iamhc03s15ljb95vesv44xi99wktko.jpg "Svija-Sync-startup")
+![sync-en-what-is](https://docs.svija.com/wp-content/uploads/elementor/thumbs/sync-en-what-is-ot4i8ry776syjeq905siy0qxpyu3j7hqirbpekjn68.jpg "sync-en-what-is")
+
+**Enter Your First Name**
+
+The name is used to show your collaborators who last worked on your site:
+
+![sync-en-name](https://docs.svija.com/wp-content/uploads/2020/07/sync-en-name.jpg "sync-en-name")
+
+**The Instruction Screen**
+
+You will then be presented with the instructions:
+
+![sync-en-instructions](https://docs.svija.com/wp-content/uploads/elementor/thumbs/sync-en-instructions-ot4i8r0d0cro7srm5ndwdizh4kyqbie06mo7xal1cg.jpg "sync-en-instructions")
 
 **Press D for Download**
 
@@ -108,10 +130,10 @@ The first time you connect to your website, your computer will ask you to accept
 You'll see the following message:
 
     The authenticitiy of host name & IP of your site can't be established...
-    ECDSA key fingerprint is SHA256:lkjdqmlfkjqsdf098sdflkj...
-    Are you sure you want to continue connecting (yes/no)?
+ECDSA key fingerprint is SHA256:lkjdqmlfkjqsdf098sdflkj...
+Are you sure you want to continue connecting (yes/no)?
 
-**You must type "yes"** followed by return (not just y).
+**You must type "yes" **then return (not just y).
 
 The application will then download your site files in **a new folder called "sync"** in the same folder as Svija Sync:
 
