@@ -23,13 +23,13 @@ Créer un dossier de travail et mettre **Svija Sync.command 0.0.0-fr.txt** ded
 Ouvrir le fichier et **remplacer le « x » seul** par les trois lignes rouges dans le mail que vous avez reçu de Svija :
 
     site='example.com'
-user='example'
-pass='eY-v354strs'
+    user='example'
+    pass='eY-v354strs'
 
 Puis renommer le script* :
 
     sync.command 0.0.0-fr.txt devient
-sync.command
+    sync.command
 
 **Cliquer deux fois** sur Svija Sync.command pour le démarrer.*
 
@@ -73,15 +73,15 @@ Sur votre ordinateur :
 **Remplacer le « x » seul** par les trois lignes rouges dans le mail que vous avez reçu de Svija :
 
     site='exemple.com'
-user='exemple'
-pass='vYtr)59Ytre'
+    user='exemple'
+    pass='vYtr)59Ytre'
 
 ![sync-te-fr-coords](https://docs.svija.com/wp-content/uploads/elementor/thumbs/sync-te-fr-coords-ot4i8xl8c70c743hhl0t8ptp1yzs1uxezfxx2geapk.jpg "sync-te-fr-coords")
 
 **Fermer** le document, puis **renommer-le** pour enlever la partie après .command :
 
     Svija Sync.command 0.0.0-fr.txt devient
-Svija Sync.command
+    Svija Sync.command
 
 Vous êtes susceptible de voir l'avertissement suivant :
 
@@ -130,8 +130,8 @@ La première fois que vous vous connectez à votre site, votre ordinateur vous d
 Vous verrez un message en anglais :
 
     The authenticitiy of host nom & IP de votre site can't be established...
-ECDSA key fingerprint is SHA256:lkjdqmlfkjqsdf098sdflkj...
-Are you sure you want to continue connecting (yes/no)?
+    ECDSA key fingerprint is SHA256:lkjdqmlfkjqsdf098sdflkj...
+    Are you sure you want to continue connecting (yes/no)?
 
 **Il faut taper « yes »** puis retour (et non pas y).
 

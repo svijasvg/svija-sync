@@ -23,13 +23,13 @@ Create a work folder and put **Svija Sync.command 0.0.0.txt** in it.
 Open the file and **replace the single "x"** with the three lines of red text in the email you got from Svija :
 
     site='example.com'
-user='example'
-pass='eY-v354strs'
+    user='example'
+    pass='eY-v354strs'
 
 Then rename the script:* 
 
     sync.command 0.0.0-fr.txt becomes
-sync.command
+    sync.command
 
 **Click twice** on Svija Sync.command to start the script.*
 
@@ -73,15 +73,15 @@ On your computer:
 **Replace the single "x"** with the three lines of red text in the email you received from Svija:
 
     site='example.com'
-user='example'
-pass='lYtr384Ytrs'
+    user='example'
+    pass='lYtr384Ytrs'
 
 ![sync-te-en-coords](https://docs.svija.com/wp-content/uploads/2020/07/sync-te-en-coords.jpg "sync-te-en-coords")
 
 **Close** the file, then **rename it** to remove the part after .command:
 
     Svija Sync.command 0.0.0.txt becomes
-Svija Sync.command
+    Svija Sync.command
 
 You may see the following warning:
 
@@ -130,8 +130,8 @@ The first time you connect to your website, your computer will ask you to accept
 You'll see the following message:
 
     The authenticitiy of host name & IP of your site can't be established...
-ECDSA key fingerprint is SHA256:lkjdqmlfkjqsdf098sdflkj...
-Are you sure you want to continue connecting (yes/no)?
+    ECDSA key fingerprint is SHA256:lkjdqmlfkjqsdf098sdflkj...
+    Are you sure you want to continue connecting (yes/no)?
 
 **You must type "yes" **then return (not just y).
 
