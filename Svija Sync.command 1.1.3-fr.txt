@@ -15,12 +15,14 @@ x
         bold=`echo $'\e[1m'`
         none=`echo $'\e[0m'`
 
-#———————————————————————————————————————— localized keys
-
-      upload='U'
-    download='D'
-      keyyes='O'
-       keyno='N'
+#———————————————————————————————————————— localized keys                            
+                                                                                    
+  keyup='U'                                                                         
+keydown='D'                                                                         
+ keyyes='Y'                                                                         
+  keyno='N'                                                                         
+                                                                                    
+#———————————————————————————————————————— localized strings                         
 
 str01="Échec de connexion"
 str02="Êtes-vous conneté·e à Internet ?"
@@ -29,8 +31,7 @@ str04="Utilisateur :"
 str05="        Nom :"
 str06="Votre ordinateur -> site web :"
 str07="Votre ordinateur <- site web :"
-str08="Choisissez une option (appuyer sur retour pour annuler)"
-str08="Choose an option ($bold""Q$none to quit)"
+str08="Choisissez une option ($bold""Q$none pour quitter)"
 str09="Quel est votre prénom ?"
 str10="Dernière modification par"
 str11="2-30 lettres, trait, point & espace$none — $bold""pas d'accent"
