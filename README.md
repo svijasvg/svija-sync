@@ -1,7 +1,7 @@
 [En français](https://github.com/svijasvg/svija-sync/blob/master/lisez-moi.md) · [Source Document](https://docs.svija.com/en/quick-start/1-1-svija-sync)
 ![Svija: SVG-based websites built in Adobe Illustrator](http://files.svija.com/github/readme-logo.png "Svija: SVG-based websites built in Adobe Illustrator")
 
-Svija Sync 1.1.2
+Svija Sync 1.1.3
 -------------------------------------
 
 **Svija** Sync is a **script**: a small application that only does one thing.
