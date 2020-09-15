@@ -1,3 +1,8 @@
+200728 v 1.1.2
+  cleaned up visual experience
+  no scrolling
+  sober colors
+
 200404 v 1.1.1
   prompt for name instead of pasting it in
   one-touch query responses
@@ -6,8 +11,3 @@
 
 200403 v 1.1.0
   added message of the day from msg.svija.com/fr or /en
-
-———————————————————————————————————————— next
-
-move more info to msg.svija.com
-move time consuming tasts to after inital message is presented, before accepting choice of tasks (checking name, rsynching last)
