@@ -368,7 +368,8 @@ printf "$clear_1523$site_data$clear_status"
 # name file does not exist, it's probably the first run
 if [[ ! -f ".name" ]]; then                                                    
     printf "\e[18;5H$str34...\n\n    "
-    echo "x" > ".test"; chmod 600 ".test"
+    mkdir -p "sync" 
+    echo "x" > "sync/.test"; chmod 600 ".test"
 fi       
 
 #———————————————————————————————————————— resume normal operations
