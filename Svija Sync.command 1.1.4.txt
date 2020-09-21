@@ -407,7 +407,7 @@ while [[ $flag != 'Q' ]]; do
             printf "$clear_command\e[21;0H    " # position cursor for progress bar
 
             while [[ "$user_input" != ' ' ]]; do
-                Correct_svg_names
+                correct_svg_names
                 char='+'
                 rsync -az --delete "${exclusions[@]}" --password-file=$pwd_file "sync/" $ubuntu 2>/dev/null && char='❚'
                 counter=$((counter+1))
