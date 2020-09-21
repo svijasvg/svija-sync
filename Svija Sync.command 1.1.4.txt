@@ -314,7 +314,7 @@ get_previous_name(){
 
     # name file does not exist, it's probably the first run
     if [[ ! -f ".name" ]]; then                                                    
-        printf "\e[18;5H$str34...\n\n    "
+        printf "\e[18;5H$str35...\n\n    "
     fi       
 
     # will trigger request for admin password on first run
