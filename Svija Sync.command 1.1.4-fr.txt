@@ -5,60 +5,61 @@ x
 
 #———————————————————————————————————————— instructions
 #
-#    docs.svija.com/en/quick-start/1-1-svija-sync
+#    docs.svija.com/fr/quick-start/1-1-svija-sync
 #
 #———————————————————————————————————————— language independent
 # http://ascii-table.com/ansi-escape-sequences.php
 
      version='1.1.3'
-        lang='en'
+        lang='fr'
         bold=`echo $'\e[1m'`
         none=`echo $'\e[0m'`
 
-#———————————————————————————————————————— localized keys
+#———————————————————————————————————————— localized keys                            
+                                                                                    
+  keyup='U'                                                                         
+keydown='D'                                                                         
+ keyyes='Y'                                                                         
+  keyno='N'                                                                         
+                                                                                    
+#———————————————————————————————————————— localized strings                         
 
-  keyup='U'
-keydown='D'
- keyyes='Y'
-  keyno='N'
-
-#———————————————————————————————————————— localized strings
-
-str01="Connection failure"
-str02="Are you connected to the internet?"
-str03="website:"
-str04="   user:"
-str05="   name:"
-str06="your computer -> site:"
-str07="your computer <- site:"
-str08="Choose an option ($bold""Q$none to quit)"
-str09="What is your first name?"
-str10="Site was last modified by"
-str11="2-30 letters, dash, period & space$none — $bold""no accents"
-str12="Invalid choice"
-str13="press Q"
-str14="to close"
-str15="Nothing to upload"
-str16="Synchronization Canceled"
-str17="This will replace folder \"sync\" on your computer"
-str18="Are you sure?"
-str19="Overwrite files on your computer?"
-str20="Overwrite website files?"
-str21="Synchronizing with $site"
-str22="press space"
-str23="please wait"
-str24="Downloading from"
-str25="Synchronization failed"
-str26="Download complete"
-str28="to stop"
-str29="Uploading stopped"
-str30="Downloading canceled"
-str31="Uploading canceled"
-str32="Do not close this window"
-str33="pload"
-str34="ownload"
-colon=":"
-question="?"
+str01="Échec de connexion"
+str02="Êtes-vous conneté·e à Internet ?"
+str03="   Site web :"
+str04="Utilisateur :"
+str05="        Nom :"
+str06="Votre ordinateur -> site web :"
+str07="Votre ordinateur <- site web :"
+str08="Choisissez une option ($bold""Q$none pour quitter)"
+str09="Quel est votre prénom ?"
+str10="Dernière modification par"
+str11="2-30 lettres, trait, point & espace$none — $bold""pas d'accent"
+str12="Choix non valide"
+str13="appuyer sur Q"
+str14="pour fermer"
+str15="Rien à télécharger"
+str16="Synchronisation annulée"
+str17="Remplacer \"sync\" sur votre ordinateur"
+str18="êtes-vous sûr·e ?"
+str19="Écraser les fichiers de votre ordinateur ?"
+str20="Écraser les fichiers du site web ?"
+str21="Synchronisation avec $site"
+str22="Appuyer sur espace"
+str23="mercd d'attendre"
+str24="Téléchargement depuis"
+str25="Échec de synchronisation"
+str26="Synchronisation terminée"
+str28="pour arrêter"
+str29="Téléchargement arrêté"
+str30="Téléchargement arrêté"
+str31="Téléchargement annulé"
+str32="Ne fermez pas la fenêtre"
+str33="ploader"
+str34="ownloader"
+str35="Enter admin password for this computer"
+colon=" :"
+question=" ?"
 
 #———————————————————————————————————————— housekeeping strings
 
@@ -88,11 +89,11 @@ welcome="\e[3;0H$motd
 
     Svija Sync V$version"
 
-instructions="\e[14;5H$bold""$str03 $site
+site_data="\e[14;5H$bold""$str03 $site
     $str04 $user
-    $str05
+    $str05"
 
-    $none$str06 $uload
+instructions="\e[18;5H$none$str06 $uload
     $str07 $dload"
 
 #—————————————————————————————————————————————————— the rest
@@ -360,7 +361,19 @@ get_user_command(){
 cd "$(current_dir)"
 printf "$clear_screen"
 printf "$welcome" # prints top half, bar, and svija version
-printf "$clear_1523$instructions$clear_status"
+printf "$clear_1523$site_data$clear_status"
+
+#———————————————————————————————————————— test for write access
+
+# name file does not exist, it's probably the first run
+if [[ ! -f ".name" ]]; then                                                    
+    printf "\e[18;5H$str34...\n\n    "
+    echo "x" > ".test"; chmod 600 ".test"
+fi       
+
+#———————————————————————————————————————— resume normal operations
+
+printf "$clear_1523$site_data$instructions$clear_status"
 
 get_current_name  # returns $name of person using program from file or prompt
 get_previous_name # sets $name_prev to name from /sync/.last on server
@@ -393,7 +406,7 @@ while [[ $flag != 'Q' ]]; do
             printf "$clear_command\e[21;0H    " # position cursor for progress bar
 
             while [[ "$user_input" != ' ' ]]; do
-                correct_svg_names
+                Correct_svg_names
                 char='+'
                 rsync -az --delete "${exclusions[@]}" --password-file=$pwd_file "sync/" $ubuntu 2>/dev/null && char='❚'
                 counter=$((counter+1))
@@ -437,7 +450,7 @@ while [[ $flag != 'Q' ]]; do
     if [[ $flag == 'N' ]]; then
         name=''; echo '' > ".name" 
         get_current_name # returns $name of person using program from file or prompt
-        #printf "$clear_1523$instructions"
+        #printf "$clear_1523$site_data"
         status=''
     fi
     
