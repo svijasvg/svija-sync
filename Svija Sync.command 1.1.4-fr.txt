@@ -57,7 +57,7 @@ str31="Téléchargement annulé"
 str32="Ne fermez pas la fenêtre"
 str33="ploader"
 str34="ownloader"
-str35="Enter admin password for this computer"
+str35="Taper votre mot de passe sur cet ordinateur"
 colon=" :"
 question=" ?"
 
