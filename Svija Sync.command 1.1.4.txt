@@ -390,38 +390,7 @@ while [[ $flag != 'Q' ]]; do
     get_user_command # returns $flag indicating user's command
     printf "$clear_status"
 
-#———————————————————————————————————————— upload
-    
-    if [[ $flag == $keyup ]]; then
-    
-        status=" $upload_canceled "
-        if ! sync_exists; then # no files to synchronize
-            status=" $nothing_to_upload "
-    
-        elif overwrite_server; then
-            echo $name > "sync/.last"
-            name_prev="$name"
-            counter=0
-            unset user_input
-            printf "$clear_1923$uploading_status "
-            printf "$clear_command\e[21;0H    " # position cursor for progress bar
-
-            while [[ "$user_input" != ' ' ]]; do
-                correct_svg_names
-                char='+'
-                rsync -az --delete "${exclusions[@]}" --password-file=$pwd_file "sync/" $ubuntu 2>/dev/null && char='❚'
-                counter=$((counter+1))
-                if [ $counter == "74" ]; then
-                    counter=0
-                    printf "\e[21;0H\e[K    "
-                fi
-                printf "$char"
-                IFS="" read -t $interval -n 1 user_input
-            done
-            status=" $uploading_interrupted "
-        fi
-    fi
-    
+#————————————————————————————————————————————————————————————————————————————————
 #———————————————————————————————————————— download
     
     if [[ $flag == $keydown ]]; then
@@ -455,7 +424,46 @@ while [[ $flag != 'Q' ]]; do
         status=''
     fi
     
-#————————————————————————————————————————
+#———————————————————————————————————————— upload
+    
+    if [[ $flag == $keyup ]]; then
+    
+        status=" $upload_canceled "
+        if ! sync_exists; then # no files to synchronize
+            status=" $nothing_to_upload "
+    
+        elif overwrite_server; then
+            echo $name > "sync/.last"
+            name_prev="$name"
+            counter=0
+            unset user_input
+            printf "$clear_1923$uploading_status "
+            printf "$clear_command\e[21;0H    " # position cursor for progress bar
+
+            while [[ "$user_input" != ' ' ]]; do
+                correct_svg_names
+                char='+'
+                rsync -az --delete "${exclusions[@]}" --password-file=$pwd_file "sync/" $ubuntu 2>/dev/null && char='❚'
+                counter=$((counter+1))
+                if [ $counter == "74" ]; then
+                    counter=0
+                    printf "\e[21;0H\e[K    "
+                fi
+
+                # clear possible errors before and after progress bar
+                printf "$clear_1923$uploading_status "
+
+                # go to line 21, right position
+                pos=$((counter+4))
+                printf "\e[21;$pos""H"
+                printf "$char\e[K"
+                IFS="" read -t $interval -n 1 user_input
+            done
+            status=" $uploading_interrupted "
+        fi
+    fi
+    
+#————————————————————————————————————————————————————————————————————————————————
 
     printf "$clear_status$status"
 
@@ -464,3 +472,27 @@ done # while [[ $flag != 'Q' ]]; do
 osascript -e 'tell application "Terminal" to close first window' & exit
 
 #———————————————————————————————————————— fin
+#01
+#02
+#03    2020.07.29: Svija updated to 2.1.6
+#04
+#05    new features:
+#06    Build forms in modules · /a destination modifiable
+#07    Go to /c to clear the cache · updated version of GSAP
+#08    HTML in accessibility content · support for Display P3 color
+#09
+#10  ———————————————————————————————————————————————————————————————————————————
+#11
+#12    Svija Sync V1.1.4
+#13
+#14    website: beta.svija.com
+#15       user: svijabeta
+#16       name: God
+#17
+#18    your computer -> site: Upload
+#19    your computer <- site: Download
+#20
+#21    Choose an option (Q to quit) ___
+#22
+#23  ———————————————————————————————————————————————————————————————————————————
+#24
