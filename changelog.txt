@@ -1,6 +1,7 @@
 200921 v 1.1.4
   allowed for system-requested admin password
   necessary the first time rsyncd is used
+  clean up error text if file names are changed
 
 200915 v 1.1.3
   made more like an app
