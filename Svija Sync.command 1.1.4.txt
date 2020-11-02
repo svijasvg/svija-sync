@@ -72,7 +72,7 @@ clear_command="\e[21;5H\e[K"
 
 #———————————————————————————————————————— composed text
 
-motd=$(curl -Ls msg.svija.com/$version/$lang.txt)
+motd=$(curl -Ls msg.svija.love/$version/$lang.txt)
 
 if [[ $motd == '' ]]; then
     motd="\n\n    $bold""$str01.$none\n\n    $str02\n\n"
